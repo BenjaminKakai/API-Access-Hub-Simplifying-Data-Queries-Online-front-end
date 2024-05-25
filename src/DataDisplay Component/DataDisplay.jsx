@@ -1,7 +1,7 @@
 import React from 'react';
 import './DataDisplay.css';
 
-const DataDisplay = ({ data }) => {
+function DataDisplay({ facts }) {
   return (
     <div className="data-display">
       <h2>Data Display</h2>
@@ -14,11 +14,11 @@ const DataDisplay = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item, index) => (
+          {facts.map((fact, index) => (
             <tr key={index}>
-              <td>{item.text}</td>
-              <td>{item.verified}</td>
-              <td>{item.created_at}</td>
+              <td>{fact.text}</td>
+              <td>{fact.verified}</td>
+              <td>{fact.created_at}</td>
             </tr>
           ))}
         </tbody>
