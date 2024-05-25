@@ -1,5 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header Component/Header';
+import LoginForm from './LoginForm Component/LoginForm';
+import RegistrationForm from './RegistrationForm Component/RegistrationForm';
+import WelcomeMessage from './WelcomeMessage Component/WelcomeMessage';
+import DataDisplay from './DataDisplay Component/DataDisplay';
 
 function App() {
   return (
@@ -18,6 +24,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <Header />
+      <LoginForm />
+      <RegistrationForm />
+      <WelcomeMessage />
+      {/* You need to pass data to the DataDisplay component */}
+      {/* <DataDisplay data={data} /> */}
     </div>
   );
 }
